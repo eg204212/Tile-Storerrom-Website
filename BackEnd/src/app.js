@@ -10,7 +10,11 @@ const StaffModel = require('./model/staff')
 const StaffRouter = require('./routes/staff')
 const ProductsRouter = require('./routes/products')
 const OrderRouter = require('./routes/orders')
+const fileUpload = require('express-fileupload');
 
+
+app.use(fileUpload());
+app.use('/uploads/products', express.static('public/products'))
 
 const cors = require('cors')
 app.use(cors())

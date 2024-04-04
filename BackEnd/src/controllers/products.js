@@ -11,6 +11,17 @@ exports.ProductCreate = async (req,res,next) => {
         Unit_Price
     }= req.body;
         try{
+            const { image } = req.files;
+        if (!image) {
+            throw createHttpError(404, "Image not found")
+        };
+        if (!image.mimetype.startsWith('image')) {
+            throw createHttpError(400, 'Only images are allowed');
+        }
+        let filepath = __dirname + '../../../public/products/' + image.name
+        image.mv(filepath);
+
+        let filepathtoUplaod = '/uploads/products/' + image.name
             if(!Product_Type || !Product_Description || !Brand || !Unit_Price){
                 throw createHttpError(400, 'Please add all the required Details')
             }
@@ -18,7 +29,8 @@ exports.ProductCreate = async (req,res,next) => {
         Product_Type,
         Product_Description,
         Brand,
-        Unit_Price
+        Unit_Price,
+        image: filepathtoUplaod
     });
         const result = await products.save();
         res.status(201).send(result);

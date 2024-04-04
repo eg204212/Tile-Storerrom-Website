@@ -16,10 +16,10 @@ const productsSchema = new Schema({
         required:true,
     },
     Unit_Price:{
-        type:Number,
+        type:String,
         required:true,
     },
-    Image:{
+    image:{
         type:String,
         required:false,
     }
