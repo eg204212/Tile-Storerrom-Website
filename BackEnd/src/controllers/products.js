@@ -124,10 +124,11 @@ exports.SearchProduct = async (req,res,next) => {
         if(!query){
             throw createHttpError(400,"Please search the query")
         }
-        const result = await ProductModel.find({name: {$regex: query,$options:'i'}}).exec();
+        const result = await ProductModel.find({Product_Type:{$regex: query,$options:'i'}}).exec();
         if(!result){
             throw createHttpError(404, 'Product not found');
         }
+    
         res.status(200).send(result);
     }catch (error){
         next(error)
