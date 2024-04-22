@@ -19,10 +19,6 @@ const staffSchema = new Schema({
         type:String,
         required:true,
     },
-    Employee_No:{
-        type:String,
-        required:true,
-    },
     UserName:{
         type:String,
         required:true,

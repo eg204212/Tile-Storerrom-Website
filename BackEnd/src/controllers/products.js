@@ -118,19 +118,20 @@ exports.GetOneProduct = async (req,res,next) => {
     }
 }
 
-exports.SearchProduct = async (req,res,next) => {
+exports.SearchProduct = async (req, res, next) => {
     const query = req.query.q;
-    try{
-        if(!query){
-            throw createHttpError(400,"Please search the query")
+    try {
+        if (!query) {
+            throw createHttpError(400, "Please search the query");
         }
-        const result = await ProductModel.find({Product_Type:{$regex: query,$options:'i'}}).exec();
-        if(!result){
+        const result = await ProductModel.find({ Product_Type: { $regex: query, $options: 'i' } }).exec();
+        if (!result) {
             throw createHttpError(404, 'Product not found');
         }
-    
+
         res.status(200).send(result);
-    }catch (error){
-        next(error)
+    } catch (error) {
+        next(error);
     }
-}
+};
+

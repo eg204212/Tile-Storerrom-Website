@@ -17,7 +17,7 @@ exports.StaffLogin = async (req, res, next) => {
                 process.env.JWT_SECRET,
                 { expiresIn: '4h' }
             );
-
+            
             return res.status(200).json({ token });
         }
 
@@ -52,12 +52,12 @@ exports.StaffRegister = async (req,res,next) => {
         LastName,
         Contact_No,
         Email,
-        Employee_No,
+        //Employee_No,
         UserName,
         Password
       } = req.body;
     try{
-        if(!FirstName || !LastName || !Contact_No || !Email || !Employee_No || !UserName || !Password){
+        if(!FirstName || !LastName || !Contact_No || !Email   || !UserName || !Password){
             throw createHttpError(400, 'Missing required Details')
         }
 
@@ -72,7 +72,7 @@ exports.StaffRegister = async (req,res,next) => {
                LastName,
                Contact_No,
                Email,
-               Employee_No,
+               //Employee_No,
                UserName,
                Password: hashedPassword
             });
