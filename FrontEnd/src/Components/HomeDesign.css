@@ -1,0 +1,286 @@
+.Classmain{
+    inline-size: 99%; /* Use width directly */
+    block-size:1000px;
+    margin-block-start: 0px;
+}
+.Class1 {
+    
+    inline-size: 100%; /* Use width directly */
+    block-size: 730px;
+    background-image: url('./Images/new bg 2.jpg'); 
+    background-position: center;
+    margin-block-start: 0px;
+    background-size: 100%;
+}
+.class2{
+    background-color: rgb(95, 137, 192);
+    inline-size: 101%; /* Use width directly */
+    block-size: 120px;
+    margin-block-start: 0px;   /*margin from top*/
+}
+.Class_pro{
+    inline-size: 100%; 
+    block-size:10px;
+    margin-block-start: 30px;
+}
+.Texts1{
+    font-size: 30px;
+    color: darkgoldenrod;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-inline-start: 150px;
+    padding-block-start: -10px; 
+}
+.contain_1{
+    display: flex;
+    align-items: center;
+}
+.Btn_1{
+    background-color:rgba(8, 23, 105, 0.878);
+    inline-size: 15%; 
+    block-size: 35px;
+    border-radius: 10px;
+    margin-inline-start: 1000px;
+    margin-block-start: 0px; 
+    cursor: pointer;
+    color: white;
+    font-size: 20px;
+    
+}
+.Btn_1_s{
+    background-color:rgba(8, 23, 105, 0.878);
+    inline-size: 50%; 
+    block-size: 35px;
+    border-radius: 10px;
+    margin-inline-start: 200px;
+    margin-block-start: 0px; 
+    cursor: pointer;
+    color: white;
+    font-size: 20px;
+    
+}
+.Btn_2{
+    background-color: rgba(157, 235, 235, 0.148);
+    inline-size: 45%; 
+    block-size: 20px;
+    border-radius: 10px;
+    margin-inline-start: 100px;
+    margin-block-start: 0px; 
+    cursor: pointer;
+}
+.Logos{
+    inline-size: 10%; 
+    block-size: 100px;
+    margin-inline-start: 0px;
+    margin-block-start: -62px; 
+    background-image: url('./Images/logo1.png');
+    background-position: center;
+    background-size: 115%;
+    border-radius: 50%;
+}
+.Texts2{
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: bold;
+    font-weight: 1000;
+    color: rgb(11, 13, 134);
+    margin-inline-start: 170px;
+    margin-block-start: -70px;
+}
+.Texts3{
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: bold;
+    font-weight: 1000;
+    color: black;
+    margin-inline-start: -40px;
+    margin-block-start: 0px;
+}
+.text4{
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(0, 0, 0);
+    margin-inline-start: 0px;
+    margin-block-start: 30px;
+}
+.text4_1{
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: bold;
+    font-weight: 1000;
+    color: rgb(228, 21, 21);
+    margin-inline-start: 0px;
+    margin-block-start: 12px;
+    
+}
+.text5{
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: black;
+    margin-inline-start: 0px;
+    margin-block-start: 40px;
+}
+.containerr {
+    display: flex;
+    align-items: center;
+}
+.Btn_luxery {
+    background-image: url('./Images/bb1.jpg');
+    background-size: cover;
+    background-size: contain; /* Ensure entire image is visible */
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-inline-start: 50px;
+    margin-block-start: 50px;
+    inline-size: 320px; /* Adjust the width of the button */
+    block-size: 250px; /* Adjust the height of the button */
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out; /* Add transition for smooth effect */
+}
+
+.Btn_wall {
+    background-image: url('./Images/sf.png');
+    background-size: cover;
+    background-size: contain; /* Ensure entire image is visible */
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-inline-start: 50px; 
+    margin-block-start: 50px;
+    inline-size: 320px; /* Adjust the width of the button */
+    block-size: 250px; /* Adjust the height of the button */
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out; /* Add transition for smooth effect */
+}
+
+.Btn_wood {
+    background-image: url('./Images/hoteltile.png');
+    background-size: contain; /* Ensure entire image is visible */
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-inline-start: 50px; 
+    margin-block-start: 50px;
+    inline-size: 320px; /* Adjust the width of the button */
+    block-size: 250px; /* Adjust the height of the button */
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out; /* Add transition for smooth effect */
+}
+
+.Btn_small {
+    background-image: url('./Images/t1.jpg');
+    background-size: contain; /* Ensure entire image is visible */
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-inline-start: 50px;
+    margin-block-start: 50px;
+    inline-size: 320px; /* Adjust the width of the button */
+    block-size: 250px; /* Adjust the height of the button */
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out; /* Add transition for smooth effect */
+}
+
+/* Hover effect */
+.Btn_luxery:hover,
+.Btn_wall:hover,
+.Btn_wood:hover,
+.Btn_small:hover {
+    transform: scale(1.1); /* Scale up by 10% on hover */
+}
+
+.text6{
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(250, 198, 10);
+    margin-inline-start: 0px;
+    margin-block-start: 200px;
+}
+.Text2w{
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: black;
+    margin-inline-start: 0px;
+    margin-block-start: 200px;
+}
+.text_st1{
+    font-size: 28px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: bold;
+    font-weight: 1000;
+    color: black;
+    margin-inline-start: 600px;
+    margin-block-start: 12px;
+    color: darkgoldenrod;
+}
+.text_st2{
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: bold;
+    font-weight: 1000;
+    color: black;
+    margin-inline-start: 680px;
+    margin-block-start: 12px;
+}
+.ft{
+    color: white;
+    font-weight: 150;
+    font-style: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.footer-container {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.footer-item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-button {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.footer-text {
+    margin-bottom: 10px;
+    margin-inline-start: 60px;
+}
+.footer-line {
+    width: 100%; /* Set the width to full */
+    height: 1px; /* Set the height of the line */
+    background-color: white; /* Set the color of the line */
+    margin-top: 20px; /* Adjust the margin above the line */
+}
+.footer-icons {
+    display: flex;
+    justify-content: 20px; /* Distribute items evenly */
+    align-items: center; /* Center items vertically */
+    margin-top: 10px; /* Adjust margin from the horizontal line */
+    margin-block-start: 20px;
+    margin-inline-start: 20px;
+}
+
+.footer-icon1 {
+    width: 30px; /* Set width of each icon */
+    height: 30px; /* Set height to maintain aspect ratio */
+    background-image: url('./Images/fb.png');
+    background-size: contain; /* Ensure entire image is visible */
+    background-repeat: no-repeat; /* Prevent image from repeating */
+    margin-inline-start: 10px;
+}
+
+.footer-icon2 {
+    width: 30px; /* Set width of each icon */
+    height: 30px; /* Set height to maintain aspect ratio */
+    background-image: url('./Images/inster.png');
+    background-size: contain; /* Ensure entire image is visible */
+    background-repeat: no-repeat; /* Prevent image from repeating */
+    margin-inline-start: 30px;
+}
+

@@ -1,0 +1,161 @@
+/* AllProDesign.css */
+
+/* Header Bar Styles */
+.header-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f2f2f2; /* Adjust background color as needed */
+  padding: 10px 20px;
+  border-bottom: 1px solid #ccc; /* Add a border at the bottom */
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.buttons-container {
+  display: flex;
+}
+
+.btn {
+  margin-left: 10px; /* Add margin between buttons */
+  padding: 8px 16px; /* Adjust button padding */
+  background-color: lightblue; /* Adjust button background color */
+  color: black; /* Adjust button text color */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Product Details Box Styles */
+.product-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.product-box {
+  width: calc(25% - 20px); /* Adjusted width for product box */
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box; /* Include padding and border in width calculation */
+}
+
+.product-image {
+  width: 100%; /* Adjusted width to fill the container */
+  height: auto; /* Maintain aspect ratio */
+  margin-bottom: 10px;
+}
+
+.product-details p {
+  margin: 5px 0;
+}
+.BtnEdit {
+  background-color: #99f8fd; /* Green */
+  color: black;
+  padding: 10px 24px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 140px;
+}
+
+.BtnDelete {
+  background-color: #76b8fa; /* Green */
+  color: black;
+  padding: 10px 24px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Change color when button is clicked */
+.BtnEdit:active,
+.BtnDelete:active {
+  background-color: #333; /* Dark gray */
+}
+.navigation-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #999898;
+  color: white;
+}
+
+.logo {
+  width: 150px; /* Adjusted width */
+  height: 80px; /* Adjusted height */
+  margin-right: 10px; /* Add margin for spacing */
+  background-image: url('./Images/logo1.png');
+  background-position: center;
+  background-size: cover;
+  border-radius: 50%;
+}
+
+.title {
+  margin: 0;
+  font-size: 35px;
+  font-weight: bold;
+  color: #333; /* Adjust title color as needed */
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.Btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.Btn:hover {
+  background-color: #0056b3;
+}
+.Box_search {
+  width: 250px; 
+  margin-inline-start: 150px;
+  margin-inline-end: 50px;
+  
+}
+.product-box {
+  width: calc(25% - 20px); /* Adjusted width for product box */
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box; /* Include padding and border in width calculation */
+  cursor: pointer; /* Set cursor to pointer */
+}
+.product-box:hover {
+  animation: blink 0.5s infinite alternate, scale 0.3s ease-in-out forwards; /* Blink and scale effect on hover */
+}
+
+@keyframes scale {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.06); /* Increase scale value for the effect */
+  }
+}
+
+.buttons-container {
+  display: flex;
+}
+
+.buttons-container button {
+  margin-right: 10px; /* Adjust margin between buttons */
+}

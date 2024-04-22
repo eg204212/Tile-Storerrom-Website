@@ -1,0 +1,96 @@
+.Classmain1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url('./Images/b2.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    padding: 0; /* Remove the space between 0 and px */
+    margin: 0; /* Remove any default margin */
+    width: 100%; /* Ensure it spans the entire width of the viewport */
+    align-items: center;
+    justify-content: center;
+
+}
+
+  .Text1c {
+    font-size: 50px;
+    color: darkgoldenrod;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 20px 0;
+  }
+  
+  .Class2_1{
+    background-color: white;
+    inline-size: 50%; /* Use width directly */
+    block-size: 600px;
+    border-radius: 30px;
+    margin: 50px auto;   /*margin from top*/
+    margin-block-start: 25px; /* Add margin from the top */
+    margin-inline-start: 300px;
+    padding: 10px;
+}
+  .register {
+    background-image: url('./Images/r1.png');
+    width: 25%;
+    max-width: 432px;
+    height: 432px;
+    background-size: cover;
+  }
+  
+  /* Container for text and input */
+/* Container for text and input */
+.FormGroup {
+    display: flex;
+    align-items: center; /* Align items vertically */
+    margin-bottom: 10px; /* Adjust spacing */
+    margin-top: 30px;
+  }
+  
+  .Text_regg {
+    flex: 1; /* Distribute remaining space equally */
+    font-size: 18px;
+    color: black;
+    font-weight: bold;
+  }
+  
+  .Box1_1 {
+    flex: 2; /* Distribute remaining space equally */
+    width: 60%;
+    padding: 10px;
+    margin: 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  .Btn_regp {
+    background-color: rgb(21, 52, 62);
+    color: white;
+    border: none;
+    padding: 10px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    inline-size: 150px !important; 
+    margin-left: 300px !important; 
+    margin-top: 40px !important;
+
+}
+
+.Btn_regp:hover {
+    background-color: #007bff;
+}
+
+
+  @media screen and (max-width: 768px) {
+    .Classmain1 {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .Class2_1 {
+      width: 80%;
+    }
+  }
+  
